@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProveWay Project</title>
+    <link rel="stylesheet" href="Css/Style.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <hr>
+        <h2 class="title">YAY! It's BOGO</h2>
+    </div>
+    <div class="offerOption" onclick="selectOption(1)">      <!--The function selectOption() will be triggered when any option is selected -->
+        <input type="radio" name="offerBtn" id="offer1" value="1">
+        <label for="offer1">
+            <p>1 Unit <span class="off-price">10% Off</span></p>
+            <p>$10.00 USD <small style="text-decoration: line-through; color: #888;">$12.00 USD</small></p>
+        </label>
+        <div class="size-color-dropdowns">
+            <select id="size1">
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select id="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="offerOption active" onclick="selectOption(2)">    <!--Btn for the most popular offer-->
+        <div class="most-popular">MOST POPULAR</div>
+        <input type="radio" name="offerBtn" id="offer2" value="2" checked />
+        <label for="offer2">
+            <p>2 Units <span class="off-price" >20% Off</span></p>
+            <p>$18.00 USD <small style="text-decoration: line-through; color: #888;">$24.00 USD</small></p>
+        </label>
+        <div class="size-color-dropdowns">
+            <select id="size1">
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select id="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+        <div class="size-color-dropdowns">
+            <select id="size2">
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select id="color2">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="offerOption" onclick="selectOption(3)"> 
+        <input type="radio" name="offerBtn" id="offer3" value="3">
+        <label for="unit3">
+            <p>3 Units <span class="off-price">30% Off</span></p>
+            <p>$24.00 USD <small style="text-decoration: line-through; color: #888;">$36.00 USD</small></p>
+        </label>
+        <!-- Three size & color option are given for the 3 unit option -->
+        <div class="size-color-dropdowns">  <!--First option for size and color-->
+            <select id="size1">
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select id="color1">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+        <div class="size-color-dropdowns">     <!--Second option for size and color-->
+            <select id="size2">
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select id="color2">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+        <div class="size-color-dropdowns">     <!--Third option for size and color-->
+            <select id="size3">
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select id="color3">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+    </div>
+    <!-- Button section goes here -->
+    <div style="display:flex; flex-direction:column;">
+    <p class="total"><span style="color:#ff5e5e;">Free Delivery</span><span>Total: <span id="total">$18.00 USD</span></span></p>
+    <button class="addToCart">+ Add to Cart</button>
+    </div>
+    <!-- footer of the page -->
+    <p class="footer">Powered by KnpCoder</p>
+</div>
+<script src="Js/script.js"></script>  <!--External scripts are included here-->
+</body>
+</html>
